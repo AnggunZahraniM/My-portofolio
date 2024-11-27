@@ -1,0 +1,78 @@
+/* Navbar.css */
+.navbar {
+    background-color: #106EBE !important; /* Blue background */
+    padding-left: 30px; /* Left padding for extra space */
+    padding-right: 30px; /* Right padding for extra space */
+  }
+  
+  .navbar-brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2rem; /* Increased font size for the brand */
+    color: #FFFFFF; /* White text for the brand */
+  }
+  
+  .navbar-nav .nav-link {
+    font-weight: 600; /* Bold font weight */
+    font-size: 1.3rem; /* Larger font size for links */
+    color: #FFFFFF; /* White text for the nav links */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #0FFCBE; /* Mint color for hover effect */
+    text-decoration: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #FFFFFF; /* White toggle icon */
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #0FFCBE; /* Mint color for active link */
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #0FFCBE; /* Mint color for hover effect */
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  }
+  
+  .navbar-collapse {
+    background-color: #106EBE; /* Blue background for the collapsed menu */
+  }
+  
+  .navbar-collapse .nav-item .nav-link {
+    color: #FFFFFF !important; /* Ensure white color for collapsed nav links */
+  }
+  
+  /* Increase the font size on mobile screens */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.8rem; /* Slightly smaller for mobile */
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 1.2rem; /* Larger font size on mobile */
+    }
+  }
+  
+  /* Adding responsive flexbox container for better spacing */
+  .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Ensures space between the brand and links */
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  /* Spacing for larger screens */
+  @media (min-width: 992px) {
+    .container-fluid {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  
